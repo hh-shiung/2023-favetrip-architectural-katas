@@ -63,10 +63,10 @@ Actor/actions approach is used to map the requirements to components which help 
 #### Actors & Actions
 Below are the actors and their corresponding actions invovled in the Road Warrior system
 
-| Actors | Actions |
-|---|---|
+| Actors   | Actions                                                                                                                                                                                                                                                                                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Traveler | - sign up & login to the system<br>- add new travel reservation<br>- update & delete the existing travel reservations<br>- view all the captured travel reservations in a unified dashboard<br>- view end-of-year travel usage summary reports<br>- view real-time travel updates<br>- share trip information on social media or other users within the system |
-| System | - poll & filter emails to capture travel related reservations<br>- pull travel updates from integrated agency or travel systems<br>- group travel reservations by locations & time<br>- archive completed travel reservations<br>- analyze trip details gathered from travelers |
+| System   | - poll & filter emails to capture travel related reservations<br>- pull travel updates from integrated agency or travel systems<br>- group travel reservations by locations & time<br>- archive completed travel reservations<br>- analyze trip details gathered from travelers                                                                                |
 
 #### Significant Scenarios
 
