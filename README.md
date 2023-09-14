@@ -73,6 +73,15 @@ Below are the actors and their corresponding actions invovled in the Road Warrio
 Below are the most architecturally significant scenarios derived from the Actors and Actions above, which will shape the architecture of the Road Warrior system.
 
 >todo: need some simple flow diagram
+
+![Signup](./diagrams/signup.png)
+
+![Trips List](./diagrams/trips_list.png)
+
+![Share function](./diagrams/share_function.png)
+
+![Email Analyzer](./diagrams/email_analyzer.png)
+
 ##### Travel Reservation Capture
 - Capture from Email
 - Capture from User input
