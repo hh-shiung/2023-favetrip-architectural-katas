@@ -72,6 +72,7 @@ Below are the actors and their corresponding actions invovled in the Road Warrio
 
 Below are the most architecturally significant scenarios derived from the Actors and Actions above, which will shape the architecture of the Road Warrior system.
 
+>todo: need some simple flow diagram
 ##### Travel Reservation Capture
 - Capture from Email
 - Capture from User input
@@ -90,6 +91,7 @@ Below are the most architecturally significant scenarios derived from the Actors
 #### Desired Architecture Characteristics
 We consider each of the given requirements and map them to corresponsing architecture characteristics below
 
+>todo: need rationale
 - Performance
 - Scalability
 - Extensibility
@@ -101,7 +103,7 @@ We consider each of the given requirements and map them to corresponsing archite
 #### Architecture Styles
 With the help of the [worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf), we compared against few styles and finalized with the one that will give us the most benefits and least trade-offs with respect to the architecture properties above.
 
-why choose event driven + microservices
+>todo: why choose event driven + microservices
 
 ### High Level Architecture
 
