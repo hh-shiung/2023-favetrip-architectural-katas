@@ -83,7 +83,7 @@ Below are the most architecturally significant scenarios derived from the Actors
 
 ![Trips List](./diagrams/trips_list.png)
 
-### Share Trip Details
+##### Share Trip Details
 ![Share function](./diagrams/share_function.png)
 
 ##### Travel Reservation Updates Tracker
@@ -120,6 +120,17 @@ Based on the matrix above, in terms of Scability and Evolvability (Extensibility
 Though the Performance is a downside for **Microservices**, we decided to go for a hybrid architecture style between **Event-Driven & Microservices** (see [ADR-01 Microservice Architecture](/solutions/adrs/01-microservice-architecture.md) and [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)). With this approach, we can best guarantee that **Road Warrior** will able to scale and support the rapidly growing users base, and adapt accordingly to the changing user needs, which we think is a solid foundation for success.
 
 ### High Level Architecture
+
+The high level architecture brings together the [Architecture Analysis](#architecture-analysis), with the consideration of the driving characteristics for **Road Warrior**.
+
+![High Level Architecture](/diagrams/high-level-arch.png)
+
+As shown in the diagrams above, the application is divided into 4 major components that are loosely coupled.
+
+- Front-end Client
+- Infrastructure Abstraction Layer
+- API Gateway
+- Back-end Microservices
 
 ### Detailed Architecture
 
