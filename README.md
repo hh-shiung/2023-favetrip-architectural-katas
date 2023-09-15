@@ -98,16 +98,17 @@ Below are the most architecturally significant scenarios derived from the Actors
 ### Architecture Analysis
 
 #### Desired Architecture Characteristics
-We consider each of the given requirements and map them to corresponsing architecture characteristics below
+We consider each of the given requirements and map them to corresponsing architecture characteristics below.
 
->todo: need rationale
-- Performance
-- Scalability
-- Extensibility
-- Availability
-- Data Consistency
-- Data Integrity
-- Usability
+- [Performance](/performance.md)
+- [Scalability](/scalability.md)
+- [Extensibility](/extensibility.md)
+- [Availability](/availability.md)
+- [Data Consistency](/data_consistency.md)
+- [Data Integrity](/data_integrity.md)
+- [Usability](/usability.md)
+
+Of course, though we feel all of the above architecture characteristics are important, the 3 of utmost priority to Road Warrior are Performance, Scalabilty, Extensibility.
 
 #### Architecture Styles
 With the help of the [worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf), we compared against few styles and finalized with the one that will give us the most benefits and least trade-offs with respect to the architecture properties above.
