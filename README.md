@@ -72,23 +72,23 @@ Below are the actors and their corresponding actions invovled in the Road Warrio
 
 Below are the most architecturally significant scenarios derived from the Actors and Actions above, which will shape the architecture of the Road Warrior system.
 
->todo: need some simple flow diagram
+##### Travel Reservation Capture
+- Capture from Email
 
 ![Signup](./diagrams/signup.png)
 
-![Trips List](./diagrams/trips_list.png)
-
-![Share function](./diagrams/share_function.png)
-
 ![Email Analyzer](./diagrams/email_analyzer.png)
 
-##### Travel Reservation Capture
-- Capture from Email
 - Capture from User input
 
+![Trips List](./diagrams/trips_list.png)
+
+### Share Trip Details
+![Share function](./diagrams/share_function.png)
+
 ##### Travel Reservation Updates Tracker
-- Track from Integrated Agency or Travel System
-- Track from Travelers Input
+- Track from Integrated Agency System
+- Track from Travelers Travel System
 
 ##### Travel Reservation Analyzer
 - Group travel reservations by locations & time
@@ -111,15 +111,22 @@ We consider each of the given requirements and map them to corresponsing archite
 Of course, though we feel all of the above architecture characteristics are important, the 3 of utmost priority to Road Warrior are Performance, Scalabilty, Extensibility.
 
 #### Architecture Styles
-With the help of the [worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf), we compared against few styles and finalized with the one that will give us the most benefits and least trade-offs with respect to the architecture properties above.
+With the help of the [Architecture Styles Worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf) from Mark Richards website, we compared against few styles to make an informed decision on the architecture style of **Road Warrior** that will give us the most benefits and least trade-offs with respect to the [architecture properties](#desired-architecture-characteristics) mentioned above.
 
->todo: why choose event driven + microservices
+![Architecture Style Selection](/assets/arch-selection.png)
+
+Based on the matrix above, in terms of Scability and Evolvability (Extensibility), both **Microservices** and **Event Driven** architecture do have 5 stars rating which quickly become the obvious candidates for our consideration.
+
+Though the Performance is a downside for **Microservices**, we decided to go for a hybrid architecture style between **Event-Driven & Microservices** (see [ADR-01 Microservice Architecture](/solutions/adrs/01-microservice-architecture.md) and [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)). With this approach, we can best guarantee that **Road Warrior** will able to scale and support the rapidly growing users base, and adapt accordingly to the changing user needs, which we think is a solid foundation for success.
 
 ### High Level Architecture
 
 ### Detailed Architecture
 
 ### ADRs
+- [ADR-01 Microservice Architecture](/solutions/adrs/01-microservice-architecture.md)
+- [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)
+- [ADR-03 Eventual Consistency](/solutions/adrs/03-eventual-consistency.md)
 
 ### References
 - [Previous Katas Entries](https://github.com/tekiegirl/SoftwareArchitectureResources/blob/main/Resources/OReillyKata.md)
