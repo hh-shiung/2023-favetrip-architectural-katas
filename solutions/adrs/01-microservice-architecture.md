@@ -1,4 +1,4 @@
-# Using a microservice architecture
+# Using a Microservice Architecture
 
 ## Status
 

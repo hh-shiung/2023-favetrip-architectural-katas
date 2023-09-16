@@ -1,6 +1,4 @@
-# Title
-
-Use of Eventual Consistency to maintain data consistency in the hybrid of event-driven & microservices architecture
+# Using Eventual Consistency
 
 ## Status
 
@@ -8,18 +6,26 @@ Proposed
 
 ## Context
 
-In a microservices architecture, services are independent of each other and often have separate data stores for each microservice. Hence, maintaining immediate consistency between data stores would require a lot of coordination between the services, increasing the latency and reducing performance.
+To maintain data consistency within the hybrid event-driven and microservices architecture, we need a consistency model.
 
-So, we need to have a way to help microservices maintain high scalability and performance without sacrificing data consistency, hence eventual consistency come in place.
+In a microservices architecture, independent services often maintain individual data stores.
+Hence, there is an coordination overhead to maintain immediate consistency between data stores, introducing cost in the form of increased latency and reduced performance.
+
+Eventual consistency helps microservices maintain high scalability and performance without sacrificing data consistency.
 
 ## Decision
 
-We decide to ensure eventual consistency to prioritise availability and partition tolerance over immediate consistency, making it perfect for microservices architecture. It allows microservices to propagate changes across different data stores asynchronously and eventually converge to a consistent state.
+An eventual consistency model is used to prioritise availability and partition tolerance over immediate consistency, making it perfect for microservices architecture.
+It allows microservices to propagate changes across different data stores asynchronously and eventually converge to a consistent state.
 
 ## Consequences
 
 ### Pros
-- Performance is gurantee while we still having the data consistency "eventually" across services
+
+- Performance is guaranteed while still having the data consistency "eventually" across services
 
 ### Cons
-- Data changes might not be reflected synchronously across every services, might be a bit lag behind for different services, but eventually every services will be having the same finalized state of data. This is still acceptable, as main goals of **Road Warrior** is to provide timely travel updates to travelers, a slight delay can be compromised as the travelers eventually got the final updates.
+
+- Asynchronous data changes has delays between different services
+  - Eventually every services will have the finalised state of data
+  - As the main goal of **Fave Trip** is to provide timely travel updates to users, a slight delay can be compromised on as the users eventually got the final updates
