@@ -123,7 +123,7 @@ Of course, though we feel all of the above architecture characteristics are impo
 
 With the help of the [Architecture Styles Worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf) from Mark Richard's website, we compared against few styles to make an informed decision on the architecture style of **Road Warrior** that will give us the most benefits and least trade-offs with respect to the [architecture properties](#desired-architecture-characteristics) mentioned above.
 
-![Architecture Style Selection](/assets/arch-selection.png)
+![Architecture Style Selection](/diagrams/arch-selection.png)
 
 Based on the matrix above, in terms of Scability and Evolvability (Extensibility), both **Microservices** and **Event Driven** architecture do have 5 stars rating which quickly become the obvious candidates for our consideration.
 
