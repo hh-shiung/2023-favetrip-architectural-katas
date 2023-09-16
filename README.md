@@ -1,5 +1,36 @@
 # Road Warriors: Road Warrior Architecture Proposal
 
+## Table of Contents
+- [Road Warriors: Road Warrior Architecture Proposal](#road-warriors-road-warrior-architecture-proposal)
+  - [Table of Contents](#table-of-contents)
+  - [Context](#context)
+  - [Requirements](#requirements)
+    - [Business Goals](#business-goals)
+    - [Business Requirements](#business-requirements)
+      - [Short Term](#short-term)
+      - [Mid Term](#mid-term)
+      - [Long Term](#long-term)
+    - [Business Constraints](#business-constraints)
+    - [Technical Constraints](#technical-constraints)
+  - [Solution](#solution)
+    - [Actors, Actions and Significant Scenarios](#actors-actions-and-significant-scenarios)
+      - [Actors \& Actions](#actors--actions)
+      - [Significant Scenarios](#significant-scenarios)
+        - [Travel Reservation Capture](#travel-reservation-capture)
+        - [Share Trip Details](#share-trip-details)
+        - [Travel Reservation Updates Tracker](#travel-reservation-updates-tracker)
+        - [Travel Reservation Analyzer](#travel-reservation-analyzer)
+    - [Architecture Analysis](#architecture-analysis)
+      - [Desired Architecture Characteristics](#desired-architecture-characteristics)
+    - [Architecture Styles](#architecture-styles)
+    - [High Level Architecture](#high-level-architecture)
+    - [Detailed Architecture](#detailed-architecture)
+    - [ADRs](#adrs)
+  - [References](#references)
+  - [FaveTrip Team Members](#favetrip-team-members)
+
+
+
 ## Context
 
 In today's increasingly complex travel landscape, travelers are faced with the challenge of managing reservations scattered across various platforms and emails. Whether planning business trips or leisure vacations, the lack of a centralized and user-friendly solution for organizing travel itineraries has become a significant pain point.
@@ -143,15 +174,26 @@ As shown in the diagrams above, the application is divided into 4 major componen
 - Back-end Microservices
 
 ### Detailed Architecture
+![Detailed Architecture](diagrams/detailed-architecture.png)
+Refer more on [ADR-04 Travel Services](/solutions/adrs/04-travel-services.md) & [ADR-05 Analytics](/solutions/adrs/05-analytics.md)
 
 ### ADRs
 
 - [ADR-01 Microservice Architecture](/solutions/adrs/01-microservice-architecture.md)
 - [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)
 - [ADR-03 Eventual Consistency](/solutions/adrs/03-eventual-consistency.md)
+- [ADR-04 Travel Services](/solutions/adrs/04-travel-services.md)
+- [ADR-05 Analytics](/solutions/adrs/05-analytics.md)
 
-### References
+## References
 
 - [Previous Katas Entries](https://github.com/tekiegirl/SoftwareArchitectureResources/blob/main/Resources/OReillyKata.md)
 - [Fundamentals of Software Architecture](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 - [Building Event-Driven Microservices](https://learning.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
+
+## FaveTrip Team Members
+- Ben Lim
+- Chee Kah Shing
+- Felicity Boey
+- Lee Kien Haw
+- Shiung
