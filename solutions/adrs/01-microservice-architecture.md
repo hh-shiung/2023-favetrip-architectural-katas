@@ -1,33 +1,47 @@
-# Title
-
-Use the microservice architecture style
+# Using a microservice architecture
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 
-Microservices is an extremely popular architecture style in recent years especially for large scale application. However, this is not a good enough reason for us to just go with it, there are some consequences need to be consider.
+Microservices is suited for our application as it provides benefits for evolvability, performance, and scalability.
 
-## Decision
+In the book Microservice Architecture, the definition of microservices includes the architecture element:
 
-We decide to go with Mircoservices architecture style for due to its nature of distributed design which able to maximise with potential of scability, evolvability and availability.
+> A microservice is an independently deployable component of bounded scope that supports interoperability through message based communications.
+> It is a style of engineering highly automated, evolvable software systems made up of capability aligned microservices.
+
+## Decision Drivers
+
+- Which architecture scores highly on the characteristics identified as important in our Architecture Analysis:
+  - Performance
+  - Scalability
+  - Extensibility
+- For immediate and medium business needs for Fave Trip, which architecture can deliver the most value with consideration for future functionality additions?
+
+## Decision.
+
+We decided to adopt a microservice architecture style for Fave Trip.
+The distributed design of this architecture style will allow us to maximise with potential of scability, evolvability and availability.
 
 ## Consequences
 
 ### Pros
-- Extensibility / Evolvability: new functions or features can be decoupled into smaller capabiltiy services easily which allow rapid iteration
-- Scalability: each services are defined with boundary which allow to scale horizontally for specific services based on the varying load and help to support huge amount of incoming requests simultaneously
-- Availability: each defined services are isolated, whereas one of the less important service is down, it won't affect the entire system hence lead to a near 0 downtime
+
+- Extensibility / Evolvability: New functions or features can be decoupled into smaller contained services to facilitate rapid iterations.
+- Scalability: Defining each service with clear boundaries allows for granular horizontal scaling based on load and demand.
+- Availability: With isolation each service is a self contained instance, allowing for graceful degradation of the overall service.
 
 
 ### Cons
-- Cost and Complexity: Each services are decoupled into multiple separate boundaries and with their own set of infrastructures included data storage
-  > Though additional cost and complexity needed, but given that the larger user base currently had, we will need to have the scaibility in place and extensibility for adapt the fast-paced environment for a startup to survive
-- Performance Overhead: Multiple network calls needed between each services to complete the work, there will be extra turnaround time added
-  > This can be mitigate by having a hybrid architecture of event driven and microservices which can refer to [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)
-- Data Consistency: As each of the services has their own separate data storage, it might be a concern to sync the data across each services which we should be addressed.
-  > This can be mitigate by having a eventual consistency design in place which can refer to [ADR-03 Eventual Consistency](/solutions/adrs/02-eventual-consistency.md)
 
-As compare with the trade-offs, the benefits given are much more significant to suit the needs of **Road Warrior**.
+- Cost and Complexity: Decoupled services with separate boundaries, each maintaining their own infrastructure (included data storage) adds maintenance overhead.
+  > To serve the existing large user base, scalability and extensibility is needed to provide critical speed and malleability for Fave Trip as a startup.
+- Performance Overhead: Multiple chained network calls would be needed between each services to complete their tasks would add turnaround time.
+  > Have a hybrid architecture of event driven and microservices. Refer to [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)
+- Data Consistency: As each service maintains their own data storage, there is a need to sync the data across each services.
+  > Have an eventual consistency design to ensure data consistency. Refer to [ADR-03 Eventual Consistency](/solutions/adrs/02-eventual-consistency.md)
+
+In summary, the trade-offs are acceptable for the benefits given to suit the needs of **Road Warrior**.
