@@ -1,4 +1,4 @@
-### Data Consistency
+# Data Consistency
 
 Data consistency is a foundational pillar within the Road Warriors architecture, particularly in our ecosystem comprising microservices and event-driven components. Our commitment to data consistency revolves around the following key principles:
 
@@ -14,5 +14,6 @@ Audit Trails and Logging: Comprehensive audit trails and logging are integral to
 
 Our commitment to data consistency within our microservices and event-driven architecture is fundamental to providing users with a seamless and reliable experience. By embracing these principles and practices, we ensure that Road Warriors delivers a cohesive and accurate representation of user data throughout the system, enhancing user confidence in our platform."
 
-#### Relates to
-- No specific requirement
+## Relates to
+
+No specific requirement

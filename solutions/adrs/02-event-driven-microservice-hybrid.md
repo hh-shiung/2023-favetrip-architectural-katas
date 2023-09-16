@@ -18,7 +18,7 @@ The event drivern architecture will be used to used for pushing notifications an
 
 ## Decision
 
-We chose to use a hybrid architecture setup of both event driven and microservices styles for the Fave Trip system.
+We chose to use a hybrid architecture setup of both event driven and microservices styles for the Road Warriors system.
 This provides us the best of both worlds, where we can have the speed and robustness from a event driven architecture for communications while maintaining flexibility for other modules of the system.
 
 ## Consequences
@@ -27,10 +27,10 @@ This provides us the best of both worlds, where we can have the speed and robust
 
 - Improved Performance
   - Services are communicate through an Event Broker, which reacts to events in real-time or near-real-time asynchronously.
-  - This is crucial for **Fave Trip** that needs to capture and push travel updates from serveral sources to travelers.
+  - This is crucial for **Road Warriors** that needs to capture and push travel updates from serveral sources to travelers.
 - Support Complex Workflows:
   - The hybrid framework is well-suited for managing complex business workflows that involve multiple steps and asynchronous interactions.
-  - This can be useful for **Fave Trip** that has multiple operations to capture, aggregate and analyze the travel reservations.
+  - This can be useful for **Road Warriors** that has multiple operations to capture, aggregate and analyze the travel reservations.
 
 ### Cons
 

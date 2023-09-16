@@ -1,4 +1,4 @@
-### Extensibility
+# Extensibility
 
 Extensibility is a fundamental architectural principle for Road Warriors, allowing us to adapt and evolve our system to meet the ever-changing needs of our users whatever that may be in the future. This is especially crucial in our interface with external systems, including airline, hotel, and car rental interfaces, for updating travel details. Our approach to extensibility is multifaceted:
 
@@ -10,5 +10,6 @@ Future Features: Extensibility goes beyond immediate integration. We envision fu
 
 Our commitment to extensibility allows us to continually innovate and stay ahead of the curve in the travel industry. By easily incorporating new features, integrating with external systems, and offering a holistic travel experience, we empower our users to plan and enjoy their journeys with confidence and convenience.
 
-#### Relates to
-- _The system must interface with the agency’s existing airline, hotel, and car rental interface system to update travel details_
+## Relates to
+
+The system must interface with the agency’s existing airline, hotel, and car rental interface system to update travel details.

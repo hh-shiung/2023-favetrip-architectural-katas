@@ -1,6 +1,6 @@
-### Data Integrity
+# Data Integrity
 
-**Data Integrity for Email Integration Feature**
+## Data Integrity for Email Integration Feature
 
 One of the core features of Road Warriors is our ability to seamlessly pull and update users' trip details from their email accounts. Ensuring data integrity is paramount within this feature, as it directly impacts the reliability and trustworthiness of the information presented to our users.
 
@@ -16,7 +16,7 @@ Data Security and Privacy: Data integrity also encompasses data security and pri
 
 By adhering to these data integrity principles within our email integration feature, we guarantee that users can rely on Road Warriors to provide accurate, secure, and up-to-date trip details, enhancing their confidence in our platform for managing their travel plans.
 
-**User Input Precedence for Trip Information**
+## User Input Precedence for Trip Information
 
 In Road Warriors, we understand the significance of user autonomy and control over their travel plans. Our commitment to data integrity extends to ensuring that user-generated input takes precedence in managing trip information. Here's how we prioritize user input:
 
@@ -26,5 +26,6 @@ Conflict Resolution: In scenarios where user input conflicts with data retrieved
 
 In the Road Warriors application, user input takes precedence when managing trip information. This means that users have ultimate control over their travel details. When users manually create, update, or delete reservations, their actions are considered authoritative. In cases where user input conflicts with data obtained from other sources, our system is designed to gracefully resolve these conflicts in favor of the user's intentions. This approach ensures that users' manual actions are always respected and accurately reflected in their travel plans, giving them a sense of control and confidence in the application.
 
-#### Relates to
-- No specific requirement
+## Relates to
+
+No specific requirement

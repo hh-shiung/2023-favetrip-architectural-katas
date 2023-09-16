@@ -1,4 +1,4 @@
-### Usability
+# Usability
 
 At Road Warriors, usability is at the heart of our design philosophy. We are dedicated to crafting an application that not only meets the diverse needs of travelers from all the world but also provides an enjoyable and hassle-free experience. Our usability requirements encompass several key aspects:
 
@@ -24,8 +24,8 @@ Consistent User Experience: Regardless of the selected language, we maintain a c
 
 In summary, Road Warriors is committed to delivering an intuitive, stylish, and user-friendly travel companion. We strive to simplify reservation management, enhance the dashboard's clarity, facilitate social sharing, and provide a rich user interface experience across all devices. Our dedication to usability ensures that our application enhances the travel experience and becomes an indispensable tool for our valued customers. We recognize the importance of linguistic diversity and strive to ensure that users can access and enjoy our application in the language that best suits their needs, promoting inclusivity and usability for all.
 
+## Relates to
 
-### Relates to
 - _Allow travelers to see all of their existing reservations organized by trip either online (web) or through their mobile device._
 - _Customers should be able to add, update, or delete existing reservations manually as well._
 - _Items in the dashboard should be able to be grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard_

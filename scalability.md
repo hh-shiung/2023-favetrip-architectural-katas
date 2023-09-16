@@ -1,4 +1,4 @@
-### Scalability
+# Scalability
 
 Scalability is a cornerstone of Road Warriors' architecture, catering to our dynamic user base of 15 million users, with 2 million actively engaging with our platform weekly. Our scalability requirements reflect the following key considerations:
 
@@ -12,6 +12,7 @@ Consistent Performance: Despite the growth in user numbers, we are committed to 
 
 Our approach to scalability combines intelligent resource management, robust infrastructure, and a forward-thinking mindset. We are dedicated to ensuring that Road Warriors can handle the dynamic nature of our user base while providing a reliable, performant, and cost-effective travel assistance platform.
 
-#### Relates to
-- _2 million active users/week_
-- _Total users: 15 million (user accounts)_
+## Relates to
+
+- 2 million active users/week
+- Total users: 15 million (user accounts)

@@ -1,4 +1,4 @@
-### Performance
+# Performance
 
 Road Warriors is committed to delivering exceptional performance for our 15 million customers, to ensure it remains their preferred travel companion. Our performance requirements encompass various aspects of speed and responsiveness to guarantee a seamless and efficient user experience.
 
@@ -10,8 +10,8 @@ Rapid Updates: We aim to outperform our competition by ensuring that any updates
 
 In summary, Road Warriors' performance standards are the best of all applications on the market, and are designed to offer our users unrivaled speed and responsiveness. We are dedicated to delivering timely updates, lightning-fast response times, and rapid information dissemination, ensuring that our users experience a travel companion that exceeds their expectations.
 
+## Relates to
 
-#### Relates to
-- _Travel updates must be presented in the app within 5 minutes of generation by the source_
-- _Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)_
-- _Updates must be in the app within 5 minutes of an update (better than the competition)_
+- Travel updates must be presented in the app within 5 minutes of generation by the source
+- Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
+- Updates must be in the app within 5 minutes of an update (better than the competition)

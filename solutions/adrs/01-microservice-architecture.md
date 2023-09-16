@@ -19,11 +19,11 @@ In the book Microservice Architecture, the definition of microservices includes 
   - Performance
   - Scalability
   - Extensibility
-- For immediate and medium business needs for Fave Trip, which architecture can deliver the most value with consideration for future functionality additions?
+- For immediate and medium business needs for Road Warriors, which architecture can deliver the most value with consideration for future functionality additions?
 
 ## Decision.
 
-We decided to adopt a microservice architecture style for Fave Trip.
+We decided to adopt a microservice architecture style for Road Warriors.
 The distributed design of this architecture style will allow us to maximise with potential of scability, evolvability and availability.
 
 ## Consequences
@@ -38,7 +38,7 @@ The distributed design of this architecture style will allow us to maximise with
 ### Cons
 
 - Cost and Complexity: Decoupled services with separate boundaries, each maintaining their own infrastructure (included data storage) adds maintenance overhead.
-  > To serve the existing large user base, scalability and extensibility is needed to provide critical speed and malleability for Fave Trip as a startup.
+  > To serve the existing large user base, scalability and extensibility is needed to provide critical speed and malleability for Road Warriors as a startup.
 - Performance Overhead: Multiple chained network calls would be needed between each services to complete their tasks would add turnaround time.
   > Have a hybrid architecture of event driven and microservices. Refer to [ADR-02 Event Driven Hybrid Architecture](/solutions/adrs/02-event-driven-hybrid.md)
 - Data Consistency: As each service maintains their own data storage, there is a need to sync the data across each services.

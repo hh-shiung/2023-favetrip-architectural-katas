@@ -28,4 +28,4 @@ It allows microservices to propagate changes across different data stores asynch
 
 - Asynchronous data changes has delays between different services
   - Eventually every services will have the finalised state of data
-  - As the main goal of **Fave Trip** is to provide timely travel updates to users, a slight delay can be compromised on as the users eventually got the final updates
+  - As the main goal of **Road Warriors** is to provide timely travel updates to users, a slight delay can be compromised on as the users eventually got the final updates
